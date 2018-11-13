@@ -1,0 +1,220 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+  font-family: "Lucida Console", Monaco, monospace;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+p {
+  font-size: 16px; }
+
+h1, h2 {
+  position: relative;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 65px;
+  color: #fff; }
+  h1 img, h2 img {
+    position: absolute;
+    left: -10px;
+    bottom: 00px;
+    z-index: -1; }
+
+h3 {
+  font-family: 'Permanent Marker', sans-serif; }
+
+strong {
+  background: #000;
+  color: #fff;
+  font-weight: normal; }
+
+section {
+  padding: 200px 0px;
+  min-height: 100vh; }
+
+ul {
+  padding: 0px;
+  padding: 0px; }
+
+nav#mimenu {
+  position: fixed;
+  z-index: 9; }
+  nav#mimenu ul {
+    list-style-type: none;
+    padding-left: 30px;
+    padding-top: 30px; }
+    nav#mimenu ul li {
+      padding: 10px !important; }
+      nav#mimenu ul li a {
+        color: #fff;
+        font-size: 17px;
+        -webkit-transition: all 0s;
+        -o-transition: all 0s;
+        transition: all 0s;
+        display: inline-block;
+        padding: 0px; }
+      nav#mimenu ul li a:hover, nav#mimenu ul li a:focus {
+        text-decoration: line-through;
+        background: transparent; }
+    nav#mimenu ul li.active a {
+      background: #000 !important;
+      color: #fff;
+      text-decoration: none; }
+
+a:hover, a:focus {
+  text-decoration: line-through;
+  color: inherit;
+  outline: none !important; }
+
+.wall {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background-image: url(../img/bk.jpg); }
+
+body {
+  position: relative; }
+
+#home {
+  background-image: url(../img/fondo-home.png);
+  background-size: 100%;
+  background-position: top center;
+  padding: 0px;
+  height: 1200px;
+  width: 100%; }
+
+.bajar {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate-x(-50%);
+  -ms-transform: translate-x(-50%);
+  transform: translate-x(-50%);
+  bottom: 10px;
+  color: #fff;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+.logo {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .logo img {
+    width: 240px; }
+  .logo p {
+    padding-top: 20px; }
+
+.trans {
+  opacity: 0; }
+
+.mv12 {
+  position: fixed;
+  left: -20px;
+  bottom: 0px;
+  opacity: 0; }
+
+.mv11 {
+  height: 100vh;
+  position: fixed;
+  right: -50px;
+  bottom: 00px; }
+
+.mv10 {
+  position: fixed;
+  left: -100px;
+  bottom: -100px; }
+
+.mv09 {
+  position: fixed;
+  right: 150px;
+  bottom: -50px; }
+
+.mv08 {
+  z-index: 2;
+  position: fixed;
+  right: -20px;
+  bottom: 50px; }
+
+.mv07 {
+  position: fixed;
+  right: -50px;
+  bottom: -50px; }
+
+.iso {
+  position: fixed;
+  z-index: 2;
+  right: 30px;
+  bottom: 30px; }
+
+.escala {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.transparencia {
+  opacity: 1 !important; }
+
+#trabajos ul li {
+  width: 45%;
+  margin: 3%;
+  margin-left: 0; }
+  #trabajos ul li a {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    position: relative; }
+    #trabajos ul li a span {
+      font-family: 'Permanent Marker', sans-serif;
+      color: #fff;
+      font-size: 40px;
+      line-height: 0.8em;
+      position: absolute;
+      top: 40%;
+      -webkit-transform: translate-y(-50%);
+      -ms-transform: translate-y(-50%);
+      transform: translate-y(-50%);
+      left: -30px;
+      opacity: 0; }
+  #trabajos ul li a:hover span {
+    opacity: 1; }
+
+#gowork h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 30px; }
+
+#gowork img {
+  width: 100%;
+  height: auto;
+  margin: 15px 0px; }
+
+#gowork p {
+  margin: 30px 0px; }
+
+#cert ul li {
+  width: 45%;
+  margin: 3%;
+  margin-left: 0; }
+  #cert ul li a img {
+    width: 100%; }
+
+#plantas ul {
+  margin-top: 50px;
+  padding: 0px;
+  margin-left: -15px; }
+  #plantas ul li {
+    list-style-type: none;
+    width: 100%;
+    position: relative;
+    height: 220px;
+    overflow: auto; }
+
+.form-control {
+  border-radius: 0px; }
