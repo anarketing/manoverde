@@ -22,18 +22,23 @@ $(document).ready(function(){
 	    if(height > 900) {
 	        $('.mv07').addClass('transparencia');	        
 	    }
-	    if(height > 1050) {
+
+	    // desaparecer home
+	    if(height > 700) {
 	        $('.iso, nav').addClass('transparencia');	        
 	        $('.logo, .bajar').css('opacity','0');
+	        //alert("te pasas")
 	    }	    
+	    //reaparecer home
+	    if(height <=700){	    	
+	    	$('.logo,.bajar').css('opacity','1');
+	    }
 
 	    if(height <=400){
 	    	//$('.escala').removeClass('escala');
 	    	$('.transparencia').removeClass('transparencia');	    	
 	    }
-	    if(height <=1050){	    	
-	    	$('.logo,.bajar').css('opacity','1');
-	    }
+	    
 	});	
 
 

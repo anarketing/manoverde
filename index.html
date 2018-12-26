@@ -32,7 +32,7 @@
                 <li><a class="toplink" href="#trabajos">trabajos</a></li>
                 <li><a class="toplink" href="#recuperacion">recuperación</a></li>
                 <li><a class="toplink" href="#cert">certificaciones</a></li>
-                <li><a class="toplink" href="#plantas">catálogo Plantas</a></li>
+                <li style="display:none"><a class="toplink" href="#plantas">catálogo Plantas</a></li>
                 <li><a class="toplink" href="#contacto">contacto</a></li>
               </ul>
           </nav>
@@ -55,16 +55,7 @@
           <img src="img/mv-07.png" alt="monstera amarilla" class="trans mv07">
           <img src="img/iso.png" alt="Platas" class="trans iso">
           <h3 class="bajar animated bounce">↓</h3>
-        </section>  
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-7 col-sm-offset-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section>          
         <section id="trabajos">
           <div class="container">
             <div class="row">
@@ -136,15 +127,17 @@
         </section>
         <section id="cert">
           <div class="container">
-            <article class="col-sm-10 col-sm-offset-2">
-              <h2>Capacitacion</h2>
-              <p>Officiis enim consectetur necessitatibus?</p>
-              <ul class="list-inline">
-                <li><a href="img/diploma.jpg" data-fancybox="diploma"><img src="img/diploma.jpg" alt=""></a></li>
-                <li><a href="img/diploma.jpg" data-fancybox="diploma"><img src="img/diploma.jpg" alt=""></a></li>
-              </ul>
-            </article>
-          </div>
+            <div class="row">
+              <article class="col-sm-10 col-sm-offset-2">
+                <h2>Capacitacion</h2>
+                <p>Officiis enim consectetur necessitatibus?</p>
+                <ul class="list-inline">
+                  <li><a href="img/diploma.jpg" data-fancybox="diploma"><img src="img/diploma.jpg" alt=""></a></li>
+                  <li><a href="img/diploma.jpg" data-fancybox="diploma"><img src="img/diploma.jpg" alt=""></a></li>
+                </ul>
+              </article>
+            </div>
+          </div><!-- contaienr -->
         </section>
         <section id="plantas">
           <div class="container">
@@ -188,26 +181,37 @@
               <article class="col-sm-10 col-sm-offset-2">
                 <h2>Contacto</h2>
               </article>
-              <div class="col-sm-4 col-sm-offset-2">
-                <form action="">
-                  <p><input type="text" class="form-control" placeholder="Nombre"></p>
-                  <p><input type="text" class="form-control" placeholder="Email"></p>
+              <form action="procesar.php" action="POST">
+                <div class="col-sm-4 col-sm-offset-2">                  
+                    <p><input type="text" class="form-control" placeholder="Nombre" name="nombre" required></p>
+                    <p><input type="text" class="form-control" placeholder="Email" name="email" required></p>                                                        
+                </div>
+                <div class="col-sm-6 xs-hidden" style="padding-left: 50px;" >
                   <p>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Consulta"></textarea>                
+                    <strong>teléfono</strong> 15-6549-4567
+                  </p>
+                  <p>
+                    <strong>email</strong> pablo@manoverde.com.ar
+                  </p>
+                </div>
+                <div class="col-sm-7 col-sm-offset-2">
+                  <p>
+                    <textarea name="consulta" id="" cols="30" rows="10" class="form-control" placeholder="Consulta" required></textarea>                
                   </p>
                   <p>
                     <input type="submit" class="btn btn-success">
                   </p>
-                </form>
-              </div>
-              <div class="col-sm-6" style="padding-left: 50px;">
-                <p>
-                  <strong>teléfono</strong> 15-6549-4567
-                </p>
-                <p>
-                  <strong>email</strong> pablo@manoverde.com.ar
-                </p>
-              </div>
+                  <br class="xs"><br class="xs">
+                  <div class="xs">
+                    <p>
+                      <strong>teléfono</strong> 15-6549-4567
+                    </p>
+                    <p>
+                      <strong>email</strong> pablo@manoverde.com.ar
+                    </p>
+                  </div>
+                </div>
+              </form> 
             </div>
           </div>
         </section>
@@ -218,7 +222,11 @@
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/scrollspy.js"></script>
+        <script src="js/reWow.js"></script>
         <script src="js/main.js"></script>
+        
         
     </body>
 </html>
